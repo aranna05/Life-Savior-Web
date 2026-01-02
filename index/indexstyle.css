@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* ================= ROOT VARIABLES ================= */
+:root {
+    --primary: #b71c1c;
+    --secondary: #e53935;
+
+    --bg-light: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+    --text-light: #333;
+    --card-light: #ffffff;
+
+    --bg-dark: #121212;
+    --text-dark: #f5f5f5;
+    --card-dark: #1e1e1e;
+
+    --hover-light: #ffebee;
+    --hover-dark: #2a2a2a;
+}
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg-light);
+    color: var(--text-light);
+    transition: background 0.4s ease, color 0.4s ease;
+    animation: fadeIn 1s ease;
+}
+
+/* ================= DARK MODE ================= */
+body.dark {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+/* ================= NAVBAR ================= */
+#navbar {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+body.dark #navbar {
+    background: linear-gradient(90deg, #000, #222);
+}
+
+#logo {
+    font-size: 26px;
+    font-weight: 700;
+    margin-right: auto;
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#navbar a:hover {
+    color: #ffeb3b;
+    transform: translateY(-3px);
+}
+
+/* ================= SEARCH ================= */
+#navbar input {
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+#navbar button,
+#darkToggle {
+    padding: 7px 14px;
+    border-radius: 20px;
+    border: none;
+    background: #ffeb3b;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* ================= HEADING ================= */
+h1 {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 42px;
+    color: var(--primary);
+    animation: slideDown 0.8s ease;
+}
+
+body.dark h1 {
+    color: #ff5252;
+}
+
+/* ================= IMAGE ================= */
+img {
+    max-width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    transition: transform 0.6s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= TEXT ================= */
+p {
+    padding: 25px 80px;
+    line-height: 1.9;
+    animation: fadeUp 1s ease;
+}
+
+/* ================= MEDICAL SECTORS ================= */
+ol {
+    width: 65%;
+    margin: auto;
+}
+
+ol li {
+    list-style: none;
+    background: var(--card-light);
+    margin: 14px 0;
+    padding: 16px 20px;
+    border-radius: 14px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* DARK MODE – MEDICAL SECTORS */
+body.dark ol li {
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    box-shadow: 0 10px 25px rgba(255,255,255,0.05);
+}
+
+ol li:hover {
+    transform: translateX(12px) scale(1.02);
+}
+
+body.dark ol li:hover {
+    background: linear-gradient(135deg, #2a2a2a, #333);
+}
+
+ol li a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+body.dark ol li a {
+    color: #ff6b6b;
+}
+
+/* ================= BADGE ================= */
+.badge {
+    float: right;
+    background: #ff5252;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* ================= TABLE ================= */
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--card-light);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+body.dark table {
+    background: var(--card-dark);
+}
+
+th {
+    background: var(--primary);
+    color: #fff;
+    padding: 14px;
+}
+
+td {
+    padding: 12px;
+}
+
+tr:hover td {
+    background: var(--hover-light);
+}
+
+body.dark tr:hover td {
+    background: var(--hover-dark);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: #fff;
+    padding: 18px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* ================= SEARCH SUGGESTIONS ================= */
+#suggestions {
+    position: absolute;
+    width: 220px;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 5px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    z-index: 2000;
+}
+
+body.dark #suggestions {
+    background: #1e1e1e;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background: var(--hover-light);
+}
+
+body.dark .suggestion-item:hover {
+    background: #333;
+}
+
+/* ================= RIPPLE EFFECT ================= */
+.ripple {
+    position: absolute;
+    background: rgba(255,82,82,0.4);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    #navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    p {
+        padding: 20px;
+    }
+
+    ol {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}

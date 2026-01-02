@@ -1,0 +1,114 @@
+/* Google Fonts ইমপোর্ট করা হয়েছে প্রফেশনাল লুকের জন্য */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); /* Deep Blue Gradient */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Heading Animation */
+h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeInDown 0.8s ease forwards;
+}
+
+/* Card Image Style */
+img {
+    width: 380px;
+    max-width: 90%;
+    border-radius: 15px;
+    margin: 10px 0;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Individual Delay for Images */
+img[alt="Company_Name"] {
+    animation: fadeInUp 0.8s ease forwards 0.4s; /* 0.4s delay */
+}
+
+img[alt="Developer_Info"] {
+    animation: fadeInUp 0.8s ease forwards 0.8s; /* 0.8s delay */
+}
+
+img:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 20px 45px rgba(0, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+/* Button Styling */
+button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: #00d2ff;
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.3);
+    opacity: 0;
+    animation: fadeIn 1s ease forwards 1.2s; /* 1.2s delay */
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 210, 255, 0.5);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+    img {
+        width: 320px;
+    }
+}

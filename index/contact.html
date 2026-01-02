@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact with us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("QsCueLGL52Jw68NG6");
+   })();
+</script>
+    <script src="contact.js"></script>
+</head>
+<body>
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>I'm available for freelance work and collaborations.</p>
+                <div class="info-item">
+                    <span>📞</span> 01873918105
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/aranna-saha197" target="_blank" class="social-icon linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://instagram.com/aron_noo" target="_blank" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="mailto:sahaaranna3@gmail.com" class="social-icon email">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+    
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <p id="response-msg"></p>
+            </form>
+        </div>
+    
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1767296804812!6m8!1m7!1so2MBjDc4WVTQ7J1KRGHuNw!2m2!1d23.84458798170527!2d90.24757961689603!3f308.8088398505694!4f-20.030829260641212!5f0.7820865974627469" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+</body>
+</html>

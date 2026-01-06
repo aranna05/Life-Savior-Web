@@ -1,56 +1,56 @@
+# 🏥 Life Savior | Healthcare & Emergency Portal
 
-# Life Savior - Healthcare & Emergency Directory
-
-**Life Savior** is a comprehensive healthcare platform designed to connect residents of Dhaka with essential medical services. The platform serves as a bridge between patients and healthcare professionals, offering a curated directory of specialists and critical emergency contact information.
-
----
-
-## 🚀 Key Features
-
-* **Specialized Medical Directory**: Categorized lists for 9 different sectors including Cardiology, Neurology, and Pediatrics.
-* **Emergency Hotline Table**: A centralized hub for vital Bangladeshi service numbers like 999, 16263, and 106.
-* **Interactive Appointment System**: A built-in modal interface allowing users to input contact details for doctor consultations.
-* **User Interface Tools**: Includes a dark mode toggle and a dedicated search bar for rapid navigation.
-* **Emergency Resources**: Direct information for blood donors, ambulance services, and national help desks.
+<p align="center">
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintained">
+  <img src="https://img.shields.io/badge/Platform-Web-blue.svg" alt="Platform">
+  <img src="https://img.shields.io/badge/Language-HTML5%20%2F%20CSS3%20%2F%20JS-orange.svg" alt="Languages">
+  <img src="https://img.shields.io/badge/Status-Live-brightgreen.svg" alt="Status">
+</p>
 
 ---
 
-## 🛠️ Technology Stack
+## ✨ Overview
+**Life Savior** is a premium healthcare directory and emergency assistance platform tailored for Dhaka City. It bridges the gap between critical medical needs and professional care by providing instant access to top-tier doctors and 24/7 emergency hotlines.
 
-* **Frontend**: HTML5, CSS3.
-* **Scripting**: JavaScript (ES6+) for UI interactions and modal management.
-* **Deployment**: Optimized for standard web browsers with responsive design elements.
-
----
-
-## 📂 Project Structure
-
-* `index.html`: The core landing page containing the "About Us" section and service directories.
-* `indexstyle.css`: Contains custom styling and layout configurations.
-* `indexscript.js`: Handles the logic for the search function, dark mode, and appointment pop-ups.
+> "Every life is precious." – Dedicated to making quality healthcare accessible, reliable, and fast.
 
 ---
 
-## 🚑 Emergency Numbers Included
+## 🚀 Core Features
 
-| Service | Contact Number |
+### 🩺 Specialized Medical Sectors
+The platform hosts 9 key departments, each highlighting specialized care:
+* **Cardiology & Neurology** – Expert heart and brain care.
+* **Pediatrics & Orthopedics** – Focused care for children and bone health.
+* **Dermatology, ENT, & Gastroenterology** – Specialized surface and internal medicine.
+* **Psychiatry & Urology** – Mental health and specialized surgical sectors.
+
+### 🚨 Emergency Response Unit
+A dedicated table of verified high-priority hotlines for immediate assistance:
+* **999** – National Emergency (Police/Fire/Ambulance).
+* **16263** – 24/7 Telemedicine & Doctor Consultations.
+* **1098** – Child Protection & Support.
+* **109/10921** – Domestic Violence & Women's Safety.
+
+### 🛠️ Interactive UI
+* **Dark Mode Toggle** – Eye-strain reduction for night-time emergencies.
+* **Appointment Modal** – Seamless booking system with instant input for patient details.
+* **Search Functionality** – Rapid search bar to find departments instantly.
+
+---
+
+## 🛠️ Tech Stack & Tools
+
+| Category | Technology |
 | :--- | :--- |
-| National Emergency (Police/Fire/Ambulance) | 999 |
-| Telemedicine / Health Advice | 16263 |
-| Child Support | 1098 |
-| National ID (NID) Services | 105 |
-| Anti-Corruption Commission (ACC) | 106 |
+| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) |
+| **Logic** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) |
+| **Design** | ![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen) ![Dark_Mode](https://img.shields.io/badge/Dark--Mode-Supported-blue) |
 
 ---
 
-## 📝 How to Use
+## 📂 To visualize the basic Setup
 
-1.  **Search**: Use the top search bar to find specific medical departments.
-2.  **Browse**: Scroll through the "Medical Sectors" to view specialized clinics.
-3.  **Book**: Click on a department to trigger the appointment modal and enter your details.
-4.  **Dark Mode**: Click the 🌙 icon in the navigation bar to toggle light/dark themes.
-
----
-
-## 👤 Author
-**Aranna Saha** Copyright © 2025 Life Savior
+1. **Clone the Repo**
+   ```html
+   git clone [https://github.com/Aranna-Saha/Life-Savior-Web.git](https://github.com/Aranna-Saha/Life-Savior-Web.git](https://aranna05.github.io/Complete-project-html/)

@@ -49,8 +49,4 @@ A dedicated table of verified high-priority hotlines for immediate assistance:
 
 ---
 
-## 📂 To visualize the basic Setup
 
-1. **Clone the Repo**
-   ```html
-   git clone [https://github.com/Aranna-Saha/Life-Savior-Web.git](https://github.com/Aranna-Saha/Life-Savior-Web.git](https://aranna05.github.io/Complete-project-html/)

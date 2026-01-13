@@ -1,0 +1,178 @@
+/* ================= GOOGLE FONT ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================= BODY ================= */
+body {
+    background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+    color: #333;
+    line-height: 1.9;
+    padding-bottom: 50px;
+    animation: fadeIn 1s ease;
+}
+
+/* ================= HEADINGS ================= */
+h1 {
+    text-align: center;
+    margin: 30px 0 15px;
+    font-size: 36px;
+    color: #b71c1c;
+}
+
+h2 {
+    margin: 35px auto 15px;
+    max-width: 900px;
+    font-size: 26px;
+    color: #222;
+}
+
+h3 {
+    margin: 25px auto 10px;
+    max-width: 900px;
+    font-size: 20px;
+    color: #b71c1c;
+}
+
+/* ================= HR ================= */
+hr {
+    width: 85%;
+    margin: 25px auto;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #b71c1c, transparent);
+}
+
+/* ================= PARAGRAPH ================= */
+p {
+    max-width: 900px;
+    margin: 12px auto;
+    font-size: 15.5px;
+    text-align: justify;
+}
+
+p b {
+    color: #b71c1c;
+}
+
+/* ================= IMAGE ================= */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= LISTS ================= */
+ul, ol {
+    max-width: 850px;
+    margin: 15px auto;
+    padding-left: 25px;
+}
+
+ul li,
+ol li {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+/* Nested lists */
+ol ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+/* ================= LINKS ================= */
+a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ================= BUTTON ================= */
+button {
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #b71c1c, #e53935);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* ================= CENTER BUTTON ================= */
+p[align="center"] {
+    text-align: center;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+        padding: 0 15px;
+    }
+
+    h3 {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    p {
+        font-size: 14.5px;
+        padding: 0 15px;
+    }
+
+    ul, ol {
+        padding-left: 35px;
+        padding-right: 15px;
+    }
+
+    img {
+        width: 85%;
+        height: auto;
+    }
+
+    button {
+        width: 85%;
+    }
+}
